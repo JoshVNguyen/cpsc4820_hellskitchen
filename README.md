@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+# TEAM HELL'S KITCHEN
+This is the github repository for Team Hell's Kitchen (aka Team Galilei) for our final project in the CPSC 4820 - 3D Game Programming: Algorithms and Techniques at Clemson University (Spring 2020).
 
-You can use the [editor on GitHub](https://github.com/JoshVNguyen/cpsc4820_hellskitchen/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Milestone 1 - Proposal
+### The Goal
+The goal of our game is a quick battle arena esque game themed around kitchen/cooking. The player is placed in a kitchen/arena with other AI players with the camera being in a static, 3rd person bird's eye view with a slight angle. The arena is filled with collectibles and objects/weapons the player/AI can pick up. These are various kitchen/food items that can be used to attack the other players with. The last player standing wins! We think this game will be a fun game that may possible be implemented with multiplayer (if time permits). It draws inspiration theme-wise from Overcooked.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Control
+The player will have the simple controls of moving with WASD, and using/picking up items with the space/f key. 
 
-### Markdown
+### AI
+The AI will have different types of script behaviors using pluggable AI scripts. There will be simple moving, targeting, and attacking scripts. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Environment and Elements
+Scattered throughout the arena are weapons such as frying pans, rolling pins, pies, ketchup bottles, oil, etc. These will spawn around randomly. There will also be structures that the player can manuever around such as cabinets, tables, stoves, chairs, etc. 
 
-```markdown
-Syntax highlighted code block
+### Minimum Viable Product
+A game with a moveable player with basic controls and the ability to use weapons.
 
-# Header 1
-## Header 2
-### Header 3
+### Plans for Each Build
+1. April 9th
+2. April 20th
+3. April 29th
 
-- Bulleted
-- List
+### Team Dynamic
+- Meeting times
+- Script delagation
+**Ethan**
 
-1. Numbered
-2. List
+**Brandon**
 
-**Bold** and _Italic_ and `Code` text
+**Josh**
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JoshVNguyen/cpsc4820_hellskitchen/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
