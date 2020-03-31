@@ -25,11 +25,12 @@ A game with a moveable player with basic controls and the ability to use weapons
 ### Team Dynamic
 - Meeting times
 - Script delagation
-**Ethan**
 
-**Brandon**
+  **Ethan**
 
-**Josh**
+  **Brandon**
+
+  **Josh**
 
 
 
