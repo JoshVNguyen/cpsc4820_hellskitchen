@@ -31,7 +31,7 @@ A game with a moveable player with basic controls and the ability to use weapons
 
 ## Team Dynamic
 - Meeting times
-  -Our proposed meeting time Monday and Friday at noon.
+  - Our proposed meeting time Monday and Friday at noon.
 - Script delagation
   - We’ve decided to delegate the following scripts to each team member. Subject to change based on project requirements and time restraints. 
 
@@ -50,7 +50,7 @@ A game with a moveable player with basic controls and the ability to use weapons
     - Weapons/Weapon Mechanics 
     - Player UI
 
-### Project Timeline
+## Project Timeline
 1. April 9th - First Playable Version (prototype)
   - Movable character
   - Basic level (colliders and basic design)
@@ -66,6 +66,8 @@ A game with a moveable player with basic controls and the ability to use weapons
   - AI Fights back
   - Reformed UI
 
-
+## Blog
+### Week 1
+For this week, we have worked on pushing out a minimum viable product. This includes making basic player movement, basic environment, and basic UI. We've been working on a simple randomized spawning system for the weapons as well as being able to pick up said weapons. The basic UI implemented is a simple heatlh bar showing player health. We've also been working towards basic combat with primitive shapes for the players and weapons. 
 
 
