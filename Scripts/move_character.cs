@@ -6,13 +6,19 @@ public class move_character : MonoBehaviour
 {
     public float speed = 1f;
  
-    // Update is called once per frame
     void Update()
     {
-        float x = Input.GetAxis("Horizontal")*Time.deltaTime*speed;
-         float z = Input.GetAxis("Vertical") * Time.deltaTime * speed;
-        transform.Translate(x,0,z);
+        float x = Input.GetAxisRaw("Horizontal") * Time.deltaTime * speed;
+        float z = Input.GetAxisRaw("Vertical") * Time.deltaTime * speed;
 
+        Vector3 move = new Vector3(x, 0.0f, z);
+        
+        // Rotate player smoothly in the direction they're facing
+        if(move != Vector3.zero){
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move.normalized), 0.2f);
+        }
+        
+        transform.Translate(move, Space.World);
     }
 
 }

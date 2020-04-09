@@ -4,46 +4,68 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-float throwForce = 50;
-Vector3 objectPos;
-float distance;
-public GameObject cube;
-public GameObject ball;
-public Rigidbody rb;
-private bool hitr = false;
-private bool press = false;
+    // Used when the player throws a held item
+    public float throwForce = 1000;
 
-  void Start()
-    {
-        rb = GetComponent<Rigidbody>();
+    // Item the player is currently touching
+    public GameObject ItemTouched;
+
+    // Item in the player's inventory
+    public GameObject ItemInventory;
+
+    void Start() {
+        // rb = GetComponent<Rigidbody>();
+        ItemTouched = null;
     }
- // Update is called once per frame
- void Update () {
-     if(Input.GetKeyDown(KeyCode.F) && press == false)
-    {
-         press = true;
-    }
+
+    void Update () {
+        // Picking up an item that the player is touching
+        if (Input.GetKeyDown(KeyCode.F) && ItemTouched != null) {
+            playerPickUpItem();
+        }
   
-    if(hitr == true && press ==true)
-    {
-        ball.transform.position= new Vector3(transform.position.x+1,transform.position.y,transform.position.z);
+        // Moving the picked up item with the player
+        if ( ItemInventory != null) {
+            ItemInventory.transform.position = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
+        }
+
+        // Throwing an item
+        if ( Input.GetKeyDown("space") && ItemInventory != null) {
+            playerThrowItem();
+        }
     }
-    if (Input.GetKeyDown("space") && press == true && hitr == true)
-        { 
-            press = false;
-            hitr = false;
-            ball.GetComponent<Rigidbody>().AddForce(transform.forward * throwForce);
-        }
- }
 
+    void playerPickUpItem(){
+        ItemInventory = ItemTouched;
 
-     void OnTriggerEnter(Collider other)
-    {
-        //turn the bol value to true when you hit one of the cubes
-        if(other.gameObject.CompareTag("ball"))
+        // Calling the gameObject's script function pickUpItem
+        ItemInventory.GetComponent<Item>().pickUpItem();
+    }
+
+    void playerThrowItem(){
+        ItemInventory.GetComponent<Rigidbody>().AddForce(transform.forward * throwForce);
+            
+        // Calling the gameObject's script function throwItem
+        ItemInventory.GetComponent<Item>().throwItem();
+
+        // Emptying the player's inventory
+        ItemInventory = null;
+    }
+
+    // If the player touches an item
+    void OnTriggerEnter(Collider other) {
+        if(other.gameObject.CompareTag("item"))
         {
-            hitr = true;
+            ItemTouched = other.gameObject;
         }
-        
+    }
+
+    // If the player stop touching an item
+    void OnTriggerExit(Collider other){
+        GameObject item = other.gameObject;
+
+        if(item != null){
+            ItemTouched = null;
+        }
     }
 }
