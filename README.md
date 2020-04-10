@@ -26,6 +26,11 @@ Another UI element is what item the player is currently holding next to their he
 ### Controls
 This game will utilize a basic control scheme with WASD for player movement. Player actions keys will be made to pick up and use different weapons.
 
+**WASD: Movement**
+**SpaceBar: Shoot**
+**F: Pick up Items**
+
+
 ## Minimum Viable Product
 A game with a moveable player with basic controls and the ability to use weapons.
 
