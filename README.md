@@ -27,7 +27,9 @@ Another UI element is what item the player is currently holding next to their he
 This game will utilize a basic control scheme with WASD for player movement. Player actions keys will be made to pick up and use different weapons.
 
 **WASD: Movement**
+
 **SpaceBar: Shoot**
+
 **F: Pick up Items**
 
 
