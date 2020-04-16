@@ -77,4 +77,6 @@ A game with a moveable player with basic controls and the ability to use weapons
 ### Week 1
 For this week, we have worked on pushing out a minimum viable product. This includes making basic player movement, basic environment, and basic UI. We've been working on a simple randomized spawning system for the weapons as well as being able to pick up said weapons. The basic UI implemented is a simple heatlh bar showing player health. We've also been working towards basic combat with primitive shapes for the players and weapons. 
 
+### Week 2
+Our first game build has been published, and we are working towards taking in the feedback we received and refining the mechanics. One thing we had brought to our attention was the fact that our player character begins floating at a certain point, so debuggin will have to go towards that. Another thing we will need to be working towards is refining the character models and environment. 
 
