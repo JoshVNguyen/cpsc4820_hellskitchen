@@ -28,6 +28,7 @@ public class Item : MonoBehaviour
         {
             Debug.Log("OUCH");
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(20);
+            isThrown = false;
         }
     }
 }

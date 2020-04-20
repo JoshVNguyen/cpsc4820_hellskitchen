@@ -43,6 +43,7 @@ public class Pickup : MonoBehaviour
     }
 
     void playerThrowItem(){
+        // Vector3 throwForce = new Vector3()
         ItemInventory.GetComponent<Rigidbody>().AddForce(transform.forward * throwForce);
             
         // Calling the gameObject's script function throwItem
