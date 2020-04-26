@@ -1,23 +1,22 @@
 fileFormatVersion: 2
 guid: 8856dbe0a9879694f8c375c54b52101d
 ModelImporter:
-  serializedVersion: 19300
-  internalIDToNameTable:
-  - first:
-      43: 4300000
-    second: fridge_01
-  - first:
-      43: 4300002
-    second: port_frigo
-  - first:
-      1001: 100100000
-    second: DataTemplate __Singleton__
-  - first:
-      74: 4873981333490874974
-    second: open
-  - first:
-      74: -6817860978217929835
-    second: close
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: port_frigo
+    400000: //RootNode
+    400002: port_frigo
+    2300000: //RootNode
+    2300002: port_frigo
+    3300000: //RootNode
+    3300002: port_frigo
+    4300000: fridge_01
+    4300002: port_frigo
+    7400000: open
+    7400002: close
+    11100000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -40,7 +39,7 @@ ModelImporter:
       name: fridge_01_inox
     second: {fileID: 2100000, guid: 5024b3038f0d9e74785d1aad92355f9b, type: 2}
   materials:
-    materialImportMode: 1
+    importMaterials: 1
     materialName: 3
     materialSearch: 1
     materialLocation: 0
@@ -69,7 +68,6 @@ ModelImporter:
     - serializedVersion: 16
       name: open
       takeName: 
-      internalID: 0
       firstFrame: 1
       lastFrame: 30
       wrapMode: 1
@@ -98,7 +96,6 @@ ModelImporter:
     - serializedVersion: 16
       name: close
       takeName: 
-      internalID: 0
       firstFrame: 31
       lastFrame: 60
       wrapMode: 1
@@ -131,7 +128,6 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
@@ -139,19 +135,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -160,10 +155,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
+  copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -173,16 +168,13 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.01
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 1
   humanoidOversampling: 1
-  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
