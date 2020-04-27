@@ -15,7 +15,7 @@ public class Item_Pan : Item
 
     void OnTriggerEnter(Collider other) {
         // If the item is being thrown and it collides with another player, reduce health
-        if(other.gameObject.CompareTag("Enemy") && isThrown == true)
+        if(other.gameObject.CompareTag("Player") && isThrown == true && lastOwner != other.gameObject)
         {
             soundEffect.Play ();
 

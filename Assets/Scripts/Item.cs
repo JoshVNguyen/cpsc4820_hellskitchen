@@ -6,9 +6,11 @@ public class Item : MonoBehaviour
 {
     public bool isPickedUp;
     public bool isThrown;
+    public GameObject lastOwner;
 
-    public void pickUpItem(){
+    public void pickUpItem(GameObject owner){
         isPickedUp = true;
+        lastOwner = owner;
     }
 
     public void throwItem(){

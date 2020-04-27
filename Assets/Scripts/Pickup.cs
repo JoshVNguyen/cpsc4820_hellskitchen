@@ -39,7 +39,7 @@ public class Pickup : MonoBehaviour
         ItemInventory = ItemTouched;
 
         // Calling the gameObject's script function pickUpItem
-        ItemInventory.GetComponent<Item>().pickUpItem();
+        ItemInventory.GetComponent<Item>().pickUpItem(this.gameObject);
     }
 
     void playerThrowItem(){

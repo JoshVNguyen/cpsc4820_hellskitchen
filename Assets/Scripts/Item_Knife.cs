@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item_Dish : Item
+public class Item_Knife : Item
 {
     private AudioSource soundEffect;
 
@@ -11,28 +11,21 @@ public class Item_Dish : Item
         isPickedUp = false;
         isThrown = false;
         soundEffect = GetComponent<AudioSource> ();
-        soundEffect.time = 0.5f;
+        soundEffect.time = 1f;
     }
 
-   void OnTriggerEnter(Collider other) {
+    void OnTriggerEnter(Collider other) {
         // If the item is being thrown and it collides with another player, reduce health
         if(other.gameObject.CompareTag("Player") && isThrown == true && lastOwner != other.gameObject)
         {
             soundEffect.Play ();
 
-            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(20);
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(50);
             isThrown = false;
-
-            Invoke("removeObject", 0.2f);
         }
         if(other.gameObject.CompareTag("Wall") && isThrown == true)
         {
-            soundEffect.Play ();
-            Invoke("removeObject", 0.2f);
+            isThrown = false;
         }
-    }
-
-    void removeObject() {
-        Destroy(gameObject);
     }
 }
