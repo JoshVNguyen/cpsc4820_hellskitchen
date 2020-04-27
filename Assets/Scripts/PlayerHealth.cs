@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public Image m_FillImage;                           // The image component of the slider.
     public Color m_FullHealthColor = Color.green;       // The color the health bar will be when on full health.
     public Color m_ZeroHealthColor = Color.red;         // The color the health bar will be when on no health.
+    public GameManager gameManage;
 
     private float m_CurrentHealth;                      // How much health the player currently has
     private bool m_Dead;                                // Is the player alive?
@@ -51,10 +52,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnDeath ()
     {
-        // Set the flag so that this function is only called once.
         m_Dead = true;
-
-        // Turn the tank off.
+        gameManage.removeEnemy();
         gameObject.SetActive (false);
     }
 }

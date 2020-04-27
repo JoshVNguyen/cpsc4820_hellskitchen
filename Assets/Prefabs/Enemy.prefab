@@ -119,6 +119,7 @@ MonoBehaviour:
   m_FillImage: {fileID: 6873784932773808756}
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
   m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
+  gameManage: {fileID: 0}
 --- !u!54 &6873784931790922087
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -150,7 +151,10 @@ MonoBehaviour:
   currentState: {fileID: 11400000, guid: 175283c353cb4524abe4f4e8d5d43146, type: 2}
   remainState: {fileID: 11400000, guid: d174fb35301a229488fbec287b08ec01, type: 2}
   player: {fileID: 0}
-  waypoint_list: []
+  waypoint_list:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   throwForce: 1000
   carry_height: 2.5
   distance_goal: 25
@@ -536,6 +540,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 0.3137255}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -803,6 +808,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
