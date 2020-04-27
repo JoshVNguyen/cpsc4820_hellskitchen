@@ -26,7 +26,7 @@ public class Pickup : MonoBehaviour
   
         // Moving the picked up item with the player
         if ( ItemInventory != null) {
-            ItemInventory.transform.position = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
+            ItemInventory.transform.position = new Vector3(transform.position.x, transform.position.y + 2.5f, transform.position.z);
         }
 
         // Throwing an item
@@ -43,8 +43,8 @@ public class Pickup : MonoBehaviour
     }
 
     void playerThrowItem(){
-        // Vector3 throwForce = new Vector3()
-        ItemInventory.GetComponent<Rigidbody>().AddForce(transform.forward * throwForce);
+        Vector3 throwVec = transform.forward;
+        ItemInventory.GetComponent<Rigidbody>().AddForce(throwVec * throwForce);
             
         // Calling the gameObject's script function throwItem
         ItemInventory.GetComponent<Item>().throwItem();

@@ -23,6 +23,7 @@ public class nav : MonoBehaviour
     void Start()
     {
         navMeshAgent = this.GetComponent<NavMeshAgent>();
+        partolWaiting = false;
         
         if(patrolPoints != null && patrolPoints.Count >= 2)
         {
