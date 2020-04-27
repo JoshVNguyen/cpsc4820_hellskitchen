@@ -6,12 +6,13 @@ public class Spawner : MonoBehaviour
 {
     public GameObject [] spawners;
     public GameObject [] weapons;
+    public float spawn_rate;
     private int index;
 
 
     void Start()
     {
-        InvokeRepeating("Spawn", 1.0f, 3.0f);
+        InvokeRepeating("Spawn", 1.0f, spawn_rate);
     }
 
     void Spawn()

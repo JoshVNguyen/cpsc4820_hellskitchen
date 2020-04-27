@@ -43,5 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef5049f39b3c1f1489523331dc577be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 0}
   spawners: []
+  weapons: []
+  spawn_rate: 3
