@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6873784931790922088}
   - component: {fileID: 2400315712294892993}
   - component: {fileID: 2288464906094696311}
+  - component: {fileID: 3732107821333666925}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -141,7 +142,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312072199727382919}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4668f2a0c5e8184ca309da7b78a2067, type: 3}
   m_Name: 
@@ -159,10 +160,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.7
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 6
+  m_Acceleration: 9
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 240
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -178,11 +179,31 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312072199727382919}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f0ba042650f914898f9d871741fb12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target_player: {fileID: 0}
+  waypoint_list: []
+--- !u!114 &3732107821333666925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312072199727382919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c04b00d5f6340141ad3544cd5bf8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: {fileID: 11400000, guid: 175283c353cb4524abe4f4e8d5d43146, type: 2}
+  remainState: {fileID: 11400000, guid: d174fb35301a229488fbec287b08ec01, type: 2}
+  player: {fileID: 0}
+  waypoint_list: []
+  nav_agent: {fileID: 0}
+  next_waypoint: 0
 --- !u!1 &390839270750976632
 GameObject:
   m_ObjectHideFlags: 0
