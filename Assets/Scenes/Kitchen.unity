@@ -1463,6 +1463,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1191220436}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1579137515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6570790309256931172, guid: 86e35dc83392b05498000a92087ba6cb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1465275453927977864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1579137523
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579137515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0265529
+  m_Center: {x: 0, y: 0.100000024, z: 0}
 --- !u!4 &1603345747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3213683996089985895, guid: 819c25e77b3fa89439e26343ad3ad72e,
@@ -2081,11 +2100,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 604276612, guid: 86e35dc83392b05498000a92087ba6cb, type: 3}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 604276612, guid: 86e35dc83392b05498000a92087ba6cb, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6570790309256931172, guid: 86e35dc83392b05498000a92087ba6cb,
         type: 3}
@@ -2145,6 +2164,11 @@ PrefabInstance:
     - target: {fileID: 7653461453773416417, guid: 86e35dc83392b05498000a92087ba6cb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585132883498849694, guid: 86e35dc83392b05498000a92087ba6cb,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
