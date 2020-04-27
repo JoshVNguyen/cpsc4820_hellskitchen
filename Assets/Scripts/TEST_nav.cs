@@ -7,6 +7,7 @@ public class TEST_nav : MonoBehaviour
 {
 
     public GameObject target_player;
+    public List<Transform> waypoint_list;
 
     private NavMeshAgent nav_agent;
     private Vector3 destination;
