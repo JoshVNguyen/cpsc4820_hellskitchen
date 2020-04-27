@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19bcdb4c3e36b40478af46c0d668ffe8, type: 3}
   m_Name: grabState
   m_EditorClassIdentifier: 
-  actions: []
-  transitions: []
+  actions:
+  - {fileID: 11400000, guid: ad455b788461c9b4b8ae2f32433a0d8b, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: a7834459d02b2ea4d9a75febc4162c40, type: 2}
+    trueState: {fileID: 11400000, guid: d174fb35301a229488fbec287b08ec01, type: 2}
+    falseState: {fileID: 11400000, guid: 175283c353cb4524abe4f4e8d5d43146, type: 2}
+  - decision: {fileID: 11400000, guid: c823145331f34014cba297fd673ff078, type: 2}
+    trueState: {fileID: 11400000, guid: e9bbdf1d31773cb47a310972bb6ac52b, type: 2}
+    falseState: {fileID: 11400000, guid: d174fb35301a229488fbec287b08ec01, type: 2}
   sceneGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
