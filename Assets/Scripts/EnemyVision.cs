@@ -10,7 +10,7 @@ public class EnemyVision : MonoBehaviour
     {
         if (other.gameObject.CompareTag("item") && this.enemy.ItemInventory == null)
         {
-            if (other.GetComponent<Item>().isPickedUp == false)
+            if (other.GetComponent<Item>().isPickedUp == false && other.GetComponent<Item>().isThrown == false)
             {
 
                 if (this.enemy.ItemFound == null)

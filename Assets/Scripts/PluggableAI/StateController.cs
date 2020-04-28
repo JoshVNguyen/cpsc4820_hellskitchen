@@ -62,6 +62,8 @@ public class StateController : MonoBehaviour
         this.ItemInventory.GetComponent<Item>().throwItem();
 
         // Emptying the player's inventory
+        this.ItemFound = null;
+        this.ItemTouched = null;
         this.ItemInventory = null;
     }
 
@@ -71,6 +73,7 @@ public class StateController : MonoBehaviour
         {
             this.ItemFound = null;
             this.ItemInventory = this.ItemTouched;
+            this.ItemTouched = null;
             this.ItemInventory.GetComponent<Item>().pickUpItem(this.gameObject);
             return true;
         }

@@ -7,7 +7,10 @@ public class GrabAction : Action
 {
     public override void Act(StateController controller)
     {
-        controller.nav_agent.destination = controller.ItemFound.transform.position;
+        if (controller.ItemFound != null)
+        {
+            controller.nav_agent.destination = controller.ItemFound.transform.position;
+        }
         controller.nav_agent.isStopped = false;
     }
 }

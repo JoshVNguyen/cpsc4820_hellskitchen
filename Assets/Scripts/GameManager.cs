@@ -21,19 +21,22 @@ public class GameManager : MonoBehaviour
     void Update() {
         time -= Time.deltaTime;
 
-        var minutes = time / 60;
-        var seconds = time % 60;
-        var fraction = (time * 100) % 100;
+        float minutes = Mathf.Floor(time / 60f);
+        float seconds = time % 60f;
+        float fraction = (time * 100f) % 100f;
 
-        timerLabel.text = string.Format ("{0:00} : {1:00} : {2:000}", minutes, seconds, fraction);
-        
-        if(enemies <= 0){
+        timerLabel.text = string.Format("{0:00} : {1:00} : {2:000}", minutes, seconds, fraction);
+
+        if (enemies <= 0)
+        {
             victory = true;
             VictoryMessage();
         }
-        if((time <= 0 && victory != true) || !(player.activeSelf)){
+        if ((time <= 0 && victory != true) || !(player.activeSelf))
+        {
             DefeatMessage();
         }
+
     }
 
     public void removeEnemy(){
